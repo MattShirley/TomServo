@@ -1,0 +1,14 @@
+{
+  "_output_dir": "/Users/mattshirley/Projects",
+  "_template": "gh:cjolowicz/cookiecutter-hypermodern-python",
+  "author": "Matt Shirley",
+  "copyright_year": "2023",
+  "development_status": "Development Status :: 4 - Beta",
+  "email": "mattutshirley@gmail.com",
+  "friendly_name": "MPTbot",
+  "github_user": "MattShirley",
+  "license": "MIT",
+  "package_name": "MPTbot",
+  "project_name": "MPTbot",
+  "version": "0.1.0"
+}
