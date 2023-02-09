@@ -1,25 +1,4 @@
-# MPTbot
-
-[![PyPI](https://img.shields.io/pypi/v/MPTbot.svg)][pypi_]
-[![Status](https://img.shields.io/pypi/status/MPTbot.svg)][status]
-[![Python Version](https://img.shields.io/pypi/pyversions/MPTbot)][python version]
-[![License](https://img.shields.io/pypi/l/MPTbot)][license]
-
-[![Read the documentation at https://MPTbot.readthedocs.io/](https://img.shields.io/readthedocs/MPTbot/latest.svg?label=Read%20the%20Docs)][read the docs]
-[![Tests](https://github.com/MattShirley/MPTbot/workflows/Tests/badge.svg)][tests]
-[![Codecov](https://codecov.io/gh/MattShirley/MPTbot/branch/main/graph/badge.svg)][codecov]
-
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
-[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
-
-[pypi_]: https://pypi.org/project/MPTbot/
-[status]: https://pypi.org/project/MPTbot/
-[python version]: https://pypi.org/project/MPTbot
-[read the docs]: https://MPTbot.readthedocs.io/
-[tests]: https://github.com/MattShirley/MPTbot/actions?workflow=Tests
-[codecov]: https://app.codecov.io/gh/MattShirley/MPTbot
-[pre-commit]: https://github.com/pre-commit/pre-commit
-[black]: https://github.com/psf/black
+# TomServo
 
 ## Features
 
@@ -31,11 +10,22 @@
 
 ## Installation
 
-You can install _MPTbot_ via [pip] from [PyPI]:
+- Checkout locally `git clone https://github.com/MattShirley/TomServo.git`
+- Create an `.env` file in the same directory as README.md
+- Add a variable `DISCORD_TOKEN` set to the value of your bot's Discord token
+- Add a variable `CHANNEL_ID` set to the channel ID that you want your bot to talk in
+- Make sure `poetry` is installed by running: `python -m pip install poetry`
+- Make sure the `poetry` environment variable plugin is installed: `python -m poetry plugin add poetry-dotenv-plugin`
+- Install app locally with `python -m poetry install`
 
-```console
-$ pip install MPTbot
+Your `.env` file should look like this (with your values filled in):
+
 ```
+CHANNEL_ID=107xxxxxxxxxxxxxxxx
+DISCORD_TOKEN=MTAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+- Start app: `python -m poetry run start_app`
 
 ## Usage
 
