@@ -27,9 +27,18 @@ DISCORD_TOKEN=MTAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 - Start app: `python -m poetry run start_app`
 
-## Usage
+## App structure
+This app was started based on the template: https://github.com/cjolowicz/cookiecutter-hypermodern-python
 
-Please see the [Command-line Reference] for details.
+The main files are `src/MPTbot/checker.py` and `src/MPTbot/bot.py
+
+### `checker.py`
+
+This file contains the core logic for checking the API server. The `MPTChecker` class has a `check` method which does the important stuff. Changes are detected against its record of shows in `self.shows`.
+
+### `bot.py`
+
+This file contains the logic for connecting to Discord. It instantiates an instance of the `MPTChecker` mentioned above. There is also a utility function `start_bot` which can bootstrap the entire bot process.
 
 ## Contributing
 
@@ -41,23 +50,3 @@ To learn more, see the [Contributor Guide].
 Distributed under the terms of the [MIT license][license],
 _MPTbot_ is free and open source software.
 
-## Issues
-
-If you encounter any problems,
-please [file an issue] along with a detailed description.
-
-## Credits
-
-This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter] template.
-
-[@cjolowicz]: https://github.com/cjolowicz
-[pypi]: https://pypi.org/
-[hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python
-[file an issue]: https://github.com/MattShirley/MPTbot/issues
-[pip]: https://pip.pypa.io/
-
-<!-- github-only -->
-
-[license]: https://github.com/MattShirley/MPTbot/blob/main/LICENSE
-[contributor guide]: https://github.com/MattShirley/MPTbot/blob/main/CONTRIBUTING.md
-[command-line reference]: https://MPTbot.readthedocs.io/en/latest/usage.html
