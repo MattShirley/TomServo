@@ -30,7 +30,7 @@ DISCORD_TOKEN=MTAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ## App structure
 This app was started based on the template: https://github.com/cjolowicz/cookiecutter-hypermodern-python
 
-The main files are `src/MPTbot/checker.py` and `src/MPTbot/bot.py
+The main files are `src/MPTbot/checker.py` and `src/MPTbot/bot.py`
 
 ### `checker.py`
 
