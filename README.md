@@ -25,7 +25,7 @@ CHANNEL_ID=107xxxxxxxxxxxxxxxx
 DISCORD_TOKEN=MTAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-- Start app: `python -m poetry run start_app`
+- Start app: `python -m poetry run start_bot`
 
 ## App structure
 This app was started based on the template: https://github.com/cjolowicz/cookiecutter-hypermodern-python
